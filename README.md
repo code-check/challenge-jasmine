@@ -31,7 +31,7 @@ Under the `Spec List` we should be able to see the following;
     - collatz(1e5) must equal 77031
     - must be called
 
-As you can see, under `App` it is saying `SPEC HAS NO EXPECTATIONS`, we will be adding the expectations for it.
+As you can see, under `Add` it is saying `SPEC HAS NO EXPECTATIONS`, we will be adding the expectations for it.
 
 Open [calculator.spec.js](./public/spec/calculator.spec.js) and find `"1 + 1 does equal 2"`. Currently it should look like this;
 ```JavaScript
@@ -92,7 +92,7 @@ Also, the 10 specs, and 4 failures should still be unchanged.
 ## Step 3, custom matcher
 We have already use the toBe matcher and more existing matchers exist and can be found in the documentation.
 
-But in this step we will make own matcher, which will test if a number is the square of another number.
+But in this step we will make our own matcher, which will test if a number is the square of another number.
 
 First, under `describe("Square", function () {` we will add the following code.
 ```JavaScript
@@ -107,7 +107,7 @@ jasmine.addMatchers({
 ```
 This will assign new matchers to the Jasmine framework, but as it is currently empty, it wont do anything.
 
-Therefore will add the following code, inside the addMatchers function, which is the actual custom matcher;
+Therefore we will add the following code, inside the addMatchers function, which is the actual custom matcher;
 ```JavaScript
 toBeSquareOf: function () {
     return {
