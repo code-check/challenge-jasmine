@@ -1,0 +1,11 @@
+﻿{
+  "editable": [
+    "spec/*"
+  ],
+  "excludes": [
+    ".gitignore",
+    ".gitattributes",
+    "challenge.json"
+  ],
+  "test": "mocha tests.js setup.js"
+}
