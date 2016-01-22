@@ -1,6 +1,6 @@
 ﻿{
   "editable": [
-    "spec/*"
+    "public/spec/*"
   ],
   "excludes": [
     ".gitignore",
