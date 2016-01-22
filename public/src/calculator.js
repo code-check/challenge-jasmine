@@ -8,28 +8,26 @@
     square: function (x) {
         return x * x;
     },
-    collatzCache: [],
     collatz: function (x) {
         var i,
             maxStart = 0,
             max = 0,
-            copy = 0;
-
-        collatzCache = new Array(x - 1);
+            copy = 0,
+            cache = new Array(x - 1);
 
         for (var start = 2; start <= x; start++) {
-            if (collatzCache[start - 2] > 0)
+            if (cache[start - 2] > 0)
                 continue;
 
             i = 0;
             copy = start;
             while (copy > 1 && i < x) {
-                if (copy <= x && collatzCache[copy - 2] > 0) {
-                    i += collatzCache[copy - 2];
+                if (copy <= x && cache[copy - 2] > 0) {
+                    i += cache[copy - 2];
                     break;
                 }
 
-                if (isEven(copy))
+                if (this.isEven(copy))
                     copy /= 2;
                 else
                     copy = copy * 3 + 1;
@@ -39,12 +37,11 @@
                 maxStart = start;
                 max = i;
             }
-            collatzCache[start - 2] = i;
+            cache[start - 2] = i;
         }
         return maxStart;
+    },
+    isEven: function (x) {
+        return (x & 1) == 0;
     }
 };
-
-function isEven(x) {
-    return (x & 1) == 0;
-}

@@ -44,8 +44,8 @@ describe("Step 3", function () {
         assert.equal(global.reporter.suites["Square"].failures, 0, "The 'Square' spec failed");
     });
 
-    it("Jasmine spec includes 'compare:'", function () {
-        assert.notEqual(specs.indexOf("compare:"), -1, "calculator.spec did not include 'compare:'");
+    it("Jasmine spec includes 'toBeSquareOf:'", function () {
+        assert.notEqual(specs.indexOf("toBeSquareOf:"), -1, "calculator.spec did not include 'toBeSquareOf:'");
     });
 });
 

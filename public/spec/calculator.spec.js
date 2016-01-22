@@ -31,21 +31,21 @@ describe("Substract", function () {
 });
 
 describe("Square", function () {
+    //BEGIN_CHALLENGE
     beforeEach(function () {
         jasmine.addMatchers({
             toBeSquareOf: function () {
                 return {
-                    //BEGIN_CHALLENGE
                     compare: function (actual, expected) {
                         return {
                             pass: expected * expected == actual
                         };
                     }
-                    //END_CHALLENGE
                 };
             }
         });
     });
+    //END_CHALLENGE
 
     it("4 squared is the square of 4", function () {
         expect(calculator.square(4)).toBeSquareOf(4);
@@ -71,9 +71,9 @@ describe("Collatz", function () {
 
     it("must be called", function () {
         //BEGIN_CHALLENGE
-        spyOn(window, "isEven").and.callThrough();
+        spyOn(calculator, "isEven").and.callThrough();
         //END_CHALLENGE
         calculator.collatz(6);
-        expect(window.isEven).toHaveBeenCalledTimes(12);
+        expect(calculator.isEven).toHaveBeenCalledTimes(12);
     });
 });
