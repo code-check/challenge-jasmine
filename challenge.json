@@ -8,8 +8,9 @@
     "challenge.json"
   ],
   "tags": [
-    "Jasmine",
     "JavaScript",
+    "Jasmine",
+    "SoftwareTesting"
   ],
   "test": "mocha tests.js setup.js"
 }
