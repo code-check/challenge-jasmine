@@ -1,4 +1,4 @@
-﻿## Information
+﻿## Jasmine Tutorial Challenge
 In this challenge we want a few basic unit tests to be made in the Jasmine test framework.
 
 In [calculator.js](./public/src/calculator.js) we provided a simple calculator with a few functions;
@@ -152,3 +152,33 @@ This will make the spy function also execute the original function, so it wont b
 If everything went correctly, all failures should now be gone, meaning you passed this challenge!
 
 If you still want to read more about Jasmine, then you can always read the [Jasmine Documentation](http://jasmine.github.io/2.4/introduction.html).
+
+
+### Test Results *before* solving the challenge  
+Initially all the tests will fail with following output
+
+```
+codecheck: Finish with code 2
+codecheck: tests  : 12
+codecheck: success: 10
+codecheck: failure: 2
+```
+
+### Test Results *after* solving the challenge
+Solve the challenge to pass the tests
+```
+codecheck: Finish with code 0
+codecheck: tests  : 12
+codecheck: success: 12
+codecheck: failure: 0
+```
+
+--- --- ---
+
+## Run Tests
+To run tests locally install codecheck in local environment by running following command in terminal.
+```
+$ npm install codecheck -g
+```
+To run tests locally, run `codecheck` command in terminal in the root folder 
+To run tests in web editor please click on `RUN` button on left side of web editor
