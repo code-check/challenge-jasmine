@@ -1,16 +1,17 @@
 ﻿{
-  "editable": [
-    "public/spec/*"
-  ],
-  "excludes": [
-    ".gitignore",
-    ".gitattributes",
-    "challenge.json"
-  ],
   "tags": [
     "JavaScript",
     "Jasmine",
     "SoftwareTesting"
   ],
+  "editable": [
+    "public/spec/*",
+    ".gitignore"
+  ],
+  "excludes": [
+    ".gitattributes",
+    "challenge.json"
+  ],
+  "main": "public/index.html",
   "test": "mocha tests.js setup.js"
 }
