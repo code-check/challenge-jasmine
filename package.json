@@ -1,5 +1,27 @@
 {
-  "dependencies": {
-    "chai": "3.4.1"
-  }
+  "name": "challenge-jasmine",
+  "version": "1.0.0",
+  "description": "Learn Jasmine",
+  "main": "setup.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jsdom": "^9.2.0"
+  },
+  "scripts": {
+    "test": "mocha tests.js setup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/code-check/challenge-jasmine.git"
+  },
+  "keywords": [
+    "Jasmine"
+  ],
+  "author": "Givery Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-check/challenge-jasmine/issues"
+  },
+  "homepage": "https://github.com/code-check/challenge-jasmine#readme"
 }
